@@ -1,7 +1,24 @@
 aid: forrst
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/forrst.png
 name: Forrst
-description: Forrst is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Forrst was a community for designers and developers to share work in progress
+  and give and receive detailed feedback, founded in 2009 by Kyle Bragger with seed
+  funding from 500 Startups (500 Global) and other angels. It was acquired by Colourlovers
+  in 2012, then by product-design firm ZURB in January 2013, and was shut down on
+  April 14, 2014. The company is defunct; forrst.com now redirects to zurb.com and
+  there is no active API, developer portal, or public API surface to enrich. This
+  profile is retained as a historical 500 Global portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/forrst/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,20 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-acquired-by: zurb
+x-shutdown-date: '2014-04-14'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Community
+- Design
+- Developer
+- Feedback
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/forrst-domain-security.yml
 - type: Website
   url: https://forrst.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
