@@ -66,6 +66,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/colourlovers/
+  name: Colourlovers
+  x-relationship: acquired
+  x-evidence: "It was acquired by Colourlovers in 2012, then by product-design firm ZURB in January 2013, and was shut down on April 14, 2014."
 - type: DomainSecurity
   url: security/forrst-domain-security.yml
 - type: Website
